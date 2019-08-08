@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+        "id": 0,
+        "title": "Article Title",
+        "imgPath": "../",
+        "date": "10/2018",
+        "hash": "art1"
+        },
+        {
+        "id": 1,
+        "title": "Another Piece on the City",
+        "imgPath": "../",
+        "date": "11/2018",
+        "hash": "art2"
+        }
+    ]
+}

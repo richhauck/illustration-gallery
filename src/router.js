@@ -23,10 +23,10 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
     },
     {
-      path: '/art',
-      name: 'art',
+      path: '/projects',
+      name: 'projects',
       // Lazy-load component
-      component: () => import('./views/Art.vue'),
+      component: () => import('./views/Projects.vue'),
     },
     {
       path: '/404',
