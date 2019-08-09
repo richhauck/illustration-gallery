@@ -1,24 +1,42 @@
 <template>
-  <div id="app">
-    <div id="nav">
+  <main id="app">
+    <nav id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/projects">Projects</router-link>
-    </div>
-    <router-view/>
-  </div>
+    </nav>
+    <transition name="fade">
+      <router-view id="router-view"/>
+    </transition>
+  </main>
 </template>
 
 <style lang="scss">
+html, body{
+  width: 100%;
+  margin:0;
+  padding: 0;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s ease-out;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 #app {
+  display: block;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
+#router-view{
+  position: absolute;
+  top: 30px;
+  width: 100%;
+}
 #nav {
-  padding: 30px;
   a {
     font-weight: bold;
     color: #2c3e50;
