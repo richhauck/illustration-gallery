@@ -12,6 +12,7 @@
         :key="project.id"
         :href="'projects/' + project.hash"
       >
+      <img :src="project.image" :alt="project.title">
       <h3>{{project.title}}</h3>
       </a>
     </div>
@@ -19,16 +20,16 @@
   </div>
 </template>
 <script>
-import { mapState, mapActions } from 'vuex';
-export default {
-  computed: mapState({
-    status: state => state.projects.status,
-    projects: state => state.projects.projectList
-  }),
-  methods:{},
-  created(){
-    this.$store.dispatch('projects/requestProjects');
+  import { mapState, mapActions } from 'vuex';
+  export default {
+    computed: mapState({
+      status: state => state.projects.status,
+      projects: state => state.projects.projectList
+    }),
+    methods:{},
+    created(){
+      this.$store.dispatch('projects/requestProjects');
+    }
   }
-}
 </script>
 

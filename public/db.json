@@ -2,17 +2,21 @@
     "projects": [
         {
         "id": 0,
-        "title": "Article Title",
+        "title": "Filming Bears",
         "imgPath": "../",
         "date": "10/2018",
-        "hash": "art1"
+        "hash": "art1",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus autem fugit quis perspiciatis nisi eaque vel repudiandae sapiente voluptate quas quia provident, enim rerum temporibus quam minima necessitatibus facere dolores?",
+        "image": "https://via.placeholder.com/300/FFCC00"
         },
         {
         "id": 1,
         "title": "Another Piece on the City",
         "imgPath": "../",
         "date": "11/2018",
-        "hash": "art2"
+        "hash": "art2",
+        "desc": "Enim rerum temporibus quam minima necessitatibus facere dolores?",
+        "image": "https://via.placeholder.com/300/CCFF00"
         }
     ]
 }

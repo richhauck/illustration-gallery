@@ -26,7 +26,13 @@ export default new Router({
       path: '/projects',
       name: 'projects',
       // Lazy-load component
-      component: () => import('./views/Projects.vue'),
+      component: () => import('./views/projects/Projects.vue'),
+    },
+    {
+      path: '/projects/:hash',
+      name: 'project',
+      // Lazy-load component
+      component: () => import('./views/projects/Project.vue'),
     },
     {
       path: '/404',

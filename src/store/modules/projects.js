@@ -6,7 +6,8 @@ const state = {
 }
 const getters = {
     status: state => state.status,
-    getProject: (state) => (hash) => {
+    getSingleProject: (state) => (hash) => {
+        console.log('getSingleProject');
         let projectsObj = state.projectList.filter(project => project.hash === hash)
         return projectsObj[0];
     },
