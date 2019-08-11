@@ -7,14 +7,32 @@
     <h2 v-else>Loading</h2>
 
     <div v-if="status==='loaded'">
-      <a
-        v-for="(project) in projects"
-        :key="project.id"
-        :href="'projects/' + project.hash"
-      >
-      <img :src="project.thumbnail" :alt="project.title">
-      <h3>{{project.title}}</h3>
-      </a>
+      <div style="display:flex;">
+
+        <div>
+          <a
+            v-for="(project) in projects"
+            :key="project.id"
+            :href="'projects/' + project.hash"
+          >
+          <img :src="project.thumbnail" :alt="project.title">
+          <h3>{{project.title}}</h3>
+          </a>
+        </div>
+
+          <div>
+          <a
+            v-for="(project) in projects"
+            v-if="project.category.includes('art')"
+            :key="project.id"
+            :href="'projects/' + project.hash"
+          >
+          <img :src="project.thumbnail" :alt="project.title">
+          <h3>{{project.title}}</h3>
+          </a>
+        </div>
+
+      </div>
     </div>
 
   </div>
