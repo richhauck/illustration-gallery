@@ -38,6 +38,16 @@ export default {
     closeNav: function () {
       this.$store.commit(SET_NAV_OPEN, false);
     }
+  },
+  watch: {
+    // Disables browser scrolling when menu is open.
+    isNavOpen: function(val){
+      if(val === true){
+        document.documentElement.style.overflow = 'hidden';
+      } else {
+        document.documentElement.style.overflow = 'auto';
+      }
+    }
   }
 }
 </script>
