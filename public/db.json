@@ -1,22 +1,48 @@
 {
     "projects": [
         {
-        "id": 0,
-        "title": "Filming Bears",
-        "imgPath": "../",
-        "date": "10/2018",
-        "hash": "art1",
-        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus autem fugit quis perspiciatis nisi eaque vel repudiandae sapiente voluptate quas quia provident, enim rerum temporibus quam minima necessitatibus facere dolores?",
-        "image": "https://via.placeholder.com/300/FFCC00"
+            "id": 0,
+            "title": "Filming Bears",
+            "imgPath": "../",
+            "date": "10/2018",
+            "hash": "filming-bears",
+            "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus autem fugit quis perspiciatis nisi eaque vel repudiandae sapiente voluptate quas quia provident, enim rerum temporibus quam minima necessitatibus facere dolores?",
+            "thumbnail": "https://via.placeholder.com/100/FFCC00",
+            "image": "https://via.placeholder.com/300/FFCC00",
+            "category": ["illustration"]
         },
         {
-        "id": 1,
-        "title": "Another Piece on the City",
-        "imgPath": "../",
-        "date": "11/2018",
-        "hash": "art2",
-        "desc": "Enim rerum temporibus quam minima necessitatibus facere dolores?",
-        "image": "https://via.placeholder.com/300/CCFF00"
-        }
+            "id": 1,
+            "title": "Another Piece on the City",
+            "imgPath": "../",
+            "date": "11/2018",
+            "hash": "another-piece-on-the-city",
+            "desc": "Enim rerum temporibus quam minima necessitatibus facere dolores?",
+            "thumbnail": "https://via.placeholder.com/100/00CC00",
+            "image": "https://via.placeholder.com/300/00CC00",
+            "category": ["art", "illustration"]
+        },
+        {
+            "id": 2,
+            "title": "Baseball Cards",
+            "imgPath": "../",
+            "date": "11/2018",
+            "hash": "baseball-cards",
+            "desc": "Enim rerum temporibus quam minima necessitatibus facere dolores?",
+            "thumbnail": "https://via.placeholder.com/100/CCFFCC",
+            "image": "https://via.placeholder.com/300/CCFFCC",
+            "category": ["art"]
+        },
+        {
+            "id": 3,
+            "title": "Real Rumor",
+            "imgPath": "../",
+            "date": "11/2018",
+            "hash": "real-rumor",
+            "desc": "Enim rerum temporibus quam minima necessitatibus facere dolores?",
+            "thumbnail": "https://via.placeholder.com/100/FF0000",
+            "image": "https://via.placeholder.com/300/FF0000",
+            "category": ["illustration"]
+            }
     ]
 }

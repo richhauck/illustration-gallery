@@ -12,7 +12,7 @@
         :key="project.id"
         :href="'projects/' + project.hash"
       >
-      <img :src="project.image" :alt="project.title">
+      <img :src="project.thumbnail" :alt="project.title">
       <h3>{{project.title}}</h3>
       </a>
     </div>
