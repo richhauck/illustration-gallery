@@ -10,21 +10,22 @@ export default new Vuex.Store({
     isNavOpen: false, // determines whether navigation menu is displayed
   },
   getters: {
-    isNavOpen: (state) => {
-      return state.isNavOpen;
-    },
+    isNavOpen: state => state.isNavOpen
   },
   // manipulate state
   mutations: {
-    [SET_NAV_OPEN](state) {
-      state.isNavOpen = !state.isNavOpen;
-    },
-
+    [SET_NAV_OPEN](state, isOpen) {
+      if (isOpen === undefined) {
+        state.isNavOpen = !state.isNavOpen;
+      } else {
+        state.isNavOpen = isOpen;
+      }
+    }
   },
-  // exposed methods
+  // exposed methods that can call mutations
   actions: {
-    setNavOpen (store) {
-      store.commit('setNavOpen');
+    setNavOpen (store, isOpen) {
+      store.commit('setNavOpen', isOpen);
     }
   },
   modules: {

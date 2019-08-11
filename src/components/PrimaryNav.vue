@@ -9,9 +9,9 @@
 
       <nav>
         <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
-          <li><router-link to="/projects">Projects</router-link></li>
+          <li><router-link v-on:click.native="closeNav()" to="/">Home</router-link></li>
+          <li><router-link v-on:click.native="closeNav()" to="/about">About</router-link></li>
+          <li><router-link v-on:click.native="closeNav()" to="/projects">Projects</router-link></li>
         </ul>
       </nav>
       
@@ -34,6 +34,9 @@ export default {
     ]),
     toggleNav: function () {
       this.$store.commit(SET_NAV_OPEN);
+    },
+    closeNav: function () {
+      this.$store.commit(SET_NAV_OPEN, false);
     }
   }
 }
